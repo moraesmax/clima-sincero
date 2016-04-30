@@ -145,6 +145,9 @@ function logoForWeather(code) {
         return "wi wi-sprinkle";
     }
     if (code >= 500 && code < 600) {
+        return "wi wi-rain";
+    }
+    if (code >= 600 && code < 700) {
         return "wi wi-snow";
     }
     if (code == 701 || code == 721 || code == 741) {
@@ -214,6 +217,7 @@ function success(position) {
 function error() {
     $(".preloader .text").html("Puta que pariu! Ou essa tua merda de navegador não tem geolocation ou deu um erro do caralho aqui!");
 }
+
 
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(success, error ,{enableHighAccuracy: true});
