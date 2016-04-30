@@ -216,7 +216,7 @@ function error() {
 }
 
 if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(success, error);
+    navigator.geolocation.getCurrentPosition(success, error ,{enableHighAccuracy: true});
 } else {
     error();
 }
