@@ -105,10 +105,10 @@ function messageForWeather(code) {
     if (code >= 300 && code < 400) {
         return messages["chuvisco"];
     }
-    if (code >= 400 && code < 500) {
+    if (code >= 500 && code < 600) {
         return messages["chuva"];
     }
-    if (code >= 500 && code < 600) {
+    if (code >= 600 && code < 700) {
         return messages["neve"];
     }
     if (code == 701 || code == 721 || code == 741) {
