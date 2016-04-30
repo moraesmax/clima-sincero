@@ -193,7 +193,7 @@ function success(position) {
                 var layout = randomColorCombination();
                 $("html, body").css("background-color", layout.backgroundColor);
                 $(".graus").html(parseInt(data.main.temp) + "°");
-                $(".name").html(data.name);
+                $(".name").html(data.name + ":");
                 $(".text .bottom").html(messageForTemperature(parseInt(data.main.temp)));
                 $(".text .top").html(messageForWeather(data.weather[0].id));
                 $(".text .top").css("color", layout.textColor);
