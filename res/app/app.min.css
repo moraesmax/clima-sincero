@@ -1,0 +1,96 @@
+
+/* Media Query */
+/*
+	uso
+	@include mobile {
+    font-size: 20px;
+  }
+ */
+/*
+	uso
+	@include tablet {
+    font-size: 20px;
+  }
+ */
+/*
+	uso
+	@include desktop {
+    font-size: 20px;
+  }
+ */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  outline: none; }
+
+body,
+html {
+  height: 100%;
+  background-color: #E9EBE8;
+  display: block;
+  -webkit-transition: background-color 200ms ease-in-out;
+          transition: background-color 200ms ease-in-out; }
+
+.preloader {
+  width: 90%;
+  max-width: 650px;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  display: block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  text-align: center;
+  -webkit-transition: opacity 3000ms ease-in-out;
+          transition: opacity 3000ms ease-in-out;
+  z-index: 10; }
+  .preloader img {
+    display: block;
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin: auto; }
+  .preloader .text {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 26px;
+    color: #a0a0a0;
+    text-transform: uppercase; }
+
+.weather {
+  height: 100%;
+  width: 100%;
+  padding-top: 10px; }
+  .weather .icon {
+    padding: 20px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-size: 70px;
+    height: 240px; }
+  .weather .temperature {
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: right;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    vertical-align: top; }
+    .weather .temperature .graus {
+      font-size: 70px; }
+  .weather .text {
+    padding: 20px;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    vertical-align: bottom; }
+    .weather .text .top {
+      line-height: 80px; }
+    .weather .text .bottom {
+      font-size: 14px;
+      padding-left: 5px; }
